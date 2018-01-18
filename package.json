@@ -1,0 +1,28 @@
+{
+  "name": "mongodb-web-scraper",
+  "version": "1.0.0",
+  "description": "A Full-Stack Express and MongoDB Web Scraping Application Edit",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steven-McCreery/MongoDB-WebScraper.git"
+  },
+  "author": "Steven McCreery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steven-McCreery/MongoDB-WebScraper/issues"
+  },
+  "homepage": "https://github.com/Steven-McCreery/MongoDB-WebScraper#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.0",
+    "morgan": "^1.9.0"
+  }
+}
