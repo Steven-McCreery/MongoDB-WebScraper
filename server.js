@@ -26,7 +26,7 @@ mongoose.Promise = Promise;
 
 // setting up routes
 var routes = require("./controller/scraper.js");
-// app.use("/", routes);
+app.use("/", routes);
 
 // starting up server and listening to port
 app.listen(PORT, () => console.log(`Scraper running on port: ${PORT}, Mongo Time!`));
