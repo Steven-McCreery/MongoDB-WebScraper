@@ -22,7 +22,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // setting up mongoose and mongoose with ecma2015 promises
-mongoose.connect("mongodb://localhost:27017");
+mongoose.connect("process.env.MONGODB_URI" || "mongodb://localhost:27017");
 mongoose.Promise = Promise;
 
 // setting up routes
