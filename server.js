@@ -8,6 +8,7 @@ var axios = require("axios");
 var cheerio = require("cheerio");
 var exphbs = require("express-handlebars");
 var db = require("./model");
+var $ = require("jquery");
 
 // setting up port
 const PORT = 3000;

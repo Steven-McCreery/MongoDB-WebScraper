@@ -1,7 +1,71 @@
-<h1>Scraping Header</h1>
+
+
+<style type="text/css">
+	.container {
+		padding:2%;
+		text-align: center;
+	}
+
+	.modal {
+		visibility: hidden;
+	}
+</style>
+
+
+{{!-- header --}}
+<div>
+	<h1>Scraping Header</h1>
+</div>
 
 <h2>Scraping Body</h2>
 
-<button class="submit">Scrape!</button>
+<button class="submit" id="getArticles" onclick="myFunction()">Scrape!</button>
 
 <h2>Scrape Results</h2>
+
+
+
+
+
+
+
+
+{{!-- modal content --}}
+<div class="container text-center">
+	<div id="dataScraped" class="modal fade " data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog modal-lg">
+
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title">Success!</h4>
+				</div>
+
+				<div class="modal-body">
+
+					<div class="panel panel-success">
+
+						<div class="panel-heading">
+							<h2 class="panel-title">Data has been scraped!</h2>
+						</div> {{!-- closes panel heading --}}
+
+						<div class="panel-body" id="pb1">								
+							
+						</div> {{!-- close panel body --}}
+
+					</div> {{!-- close panel --}}
+				
+					{{!-- buttons to direct the user to results --}}
+					{{!-- <ul class="nav nav-pills nav-justified">
+						<li><a href="#" id="viewScraped">Review Scraped Items!</a></li>
+					</ul> --}}
+
+				</div>
+
+			</div> {{!-- closes modal content --}}
+		</div> {{!-- closes modal dialog --}}
+	</div> {{!-- closes modal --}}
+</div> {{!-- closes container for modal --}}
+
+
+{{!-- <script src="../app.js"></script> --}}
